@@ -10,4 +10,5 @@ Username for 'https://github.com/larryfirst/pal-tracker.git': larryfirst@yahoo.c
 Password for 'https://larryfirst@yahoo.com@github.com/larryfirst/pal-tracker.git': <type in the password)
 .... (the infor pusing to the github)
 
+$git cherry-pick configuration-start // what this is?
 *1. I encounterred this issue $ git push enter --> fatal: unable to find remote helper for 'ttps' ( was because VDI was not connecting to GitHub)
