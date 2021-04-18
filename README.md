@@ -13,3 +13,9 @@ Password for 'https://larryfirst@yahoo.com@github.com/larryfirst/pal-tracker.git
 $git cherry-pick configuration-start // what this is?
 *1. I encounterred this issue $ git push enter --> fatal: unable to find remote helper for 'ttps' ( was because VDI was not connecting to GitHub)
 WELCOME_MESSAGE=howdy ./gradlew bootRun( where is the WELCOME_MESSAGE BINDING TO welcome.message?
+
+/home/ubuntu/workspace/pal-tracker/src/test/java/test/pivotal/pal/tracker/WelcomeControllerTest.java:12: error: constructor WelcomeController in class WelcomeController cannot be applied to given types;
+WelcomeController controller = new WelcomeController("A Welcome msg");
+^
+required: no arguments
+found: String
