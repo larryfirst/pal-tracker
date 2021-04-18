@@ -20,3 +20,5 @@ WelcomeController controller = new WelcomeController("A Welcome msg");
 required: no arguments
 found: String
 *3 cf logs pal-tracker --> takes forever? (--recent responded quickly).
+$ cf set-env pal-tracker WELCOME_MESSAGE "Hi Larry"
+
