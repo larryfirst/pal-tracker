@@ -3,6 +3,7 @@ package test.pivotal.pal.tracker;
 import io.pivotal.pal.tracker.TimeEntry;
 import io.pivotal.pal.tracker.TimeEntryController;
 import io.pivotal.pal.tracker.TimeEntryRepository;
+import net.bytebuddy.implementation.bind.annotation.IgnoreForBinding;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.http.HttpStatus;
@@ -36,8 +37,8 @@ public class TimeEntryControllerTest {
         long timeEntryId = 1L;
         TimeEntry expectedResult = new TimeEntry(timeEntryId, projectId, userId, LocalDate.parse("2017-01-08"), 8);
         doReturn(expectedResult)
-            .when(timeEntryRepository)
-            .create(any(TimeEntry.class));
+                .when(timeEntryRepository)
+                .create(any(TimeEntry.class));
 
         ResponseEntity<TimeEntry> response = controller.create(timeEntryToCreate);
 
